@@ -1,5 +1,10 @@
-# good-code
-Notes and best practices for what is (and what is not) good code, but expressed in ways that are provable (i.e., testable) and meaningful to real-world scenarios. Good Code should be
+# The Good Code Project
+
+"opinions are like assholes, everybody has one."
+
+The goal of this project is to bring some objectivity into the question of what is (and what is not) good code. Specifically, what are the most meaningful measures of good code? How can one prove that code is good or bad?
+
+Good Code should be,
 
 high performance
 
@@ -29,7 +34,7 @@ kali...
 ## fault tolerant
 An application should provide a reasonable level of fault tolerance.
 
-Unit+Integration Tests with an ***appropriate*** level of coverage, backed up by,
+Unit+Integration Tests with an ***appropriate*** level of coverage, augmented by,
 
 Mutation Testing: PIT, stryker, stryker4s
 

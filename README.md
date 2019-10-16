@@ -1,7 +1,7 @@
 # good-code
-Notes and best practices for automated testing.
+Notes and best practices for what is (and what is not) good code, but expressed in ways that are provable (i.e., testable) and meaningful to real-world scenarios.
 
-A robust well-architected system SHOULD be **provably**
+Good Code should be
 
 high performance
 
@@ -14,19 +14,26 @@ fault-tolerant
 An application should survive heavy load tests with reasonable performance characteristics (e.g., a well-designed http microservice should handle **at-least** 10,000 transactions-per-second on a single ec2 instance, and scale to 100,000tps without significant degredation)
 
 gatling.io
+
 artillery.io
+
 
 ## secure
 An application should be secure from obvious security exploits.
 
 github.com/zaproxy/zaproxy
+
 nmap
+
 kali...
+
 
 ## fault tolerant
 An application should provide a reasonable level of fault tolerance.
 
-Unit+Integration Tests (provide a high-level of code coverage)
+Unit+Integration Tests with an appropriate level of coverage, backed up by,
+
 Mutation Testing: PIT, stryker, stryker4s
+
 https://stryker-mutator.io/stryker4s/
 

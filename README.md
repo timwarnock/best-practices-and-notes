@@ -1,7 +1,5 @@
 # good-code
-Notes and best practices for what is (and what is not) good code, but expressed in ways that are provable (i.e., testable) and meaningful to real-world scenarios.
-
-Good Code should be
+Notes and best practices for what is (and what is not) good code, but expressed in ways that are provable (i.e., testable) and meaningful to real-world scenarios. Good Code should be
 
 high performance
 
@@ -11,7 +9,7 @@ fault-tolerant
 
 
 ## high performance
-An application should survive heavy load tests with reasonable performance characteristics (e.g., a well-designed http microservice should handle **at-least** 10,000 transactions-per-second on a single ec2 instance, and scale to 100,000tps without significant degredation)
+An application should survive heavy load tests with reasonable performance characteristics (e.g., a well-designed http microservice should handle **at-least** 10,000 tps (transactions-per-second) on a single instance, and scale to 100,000 tps without significant degredation).
 
 gatling.io
 
@@ -31,7 +29,7 @@ kali...
 ## fault tolerant
 An application should provide a reasonable level of fault tolerance.
 
-Unit+Integration Tests with an appropriate level of coverage, backed up by,
+Unit+Integration Tests with an ***appropriate*** level of coverage, backed up by,
 
 Mutation Testing: PIT, stryker, stryker4s
 

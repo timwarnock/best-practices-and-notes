@@ -1,16 +1,16 @@
-# use-tests
-Notes and best practices for serious automated testing
+# good-code
+Notes and best practices for automated testing.
 
 A robust well-architected system SHOULD be **provably**
 
-high-performance
+high performance
 
 secure
 
 fault-tolerant
 
 
-## high-performance
+## high performance
 An application should survive heavy load tests with reasonable performance characteristics (e.g., a well-designed http microservice should handle **at-least** 10,000 transactions-per-second on a single ec2 instance, and scale to 100,000tps without significant degredation)
 
 gatling.io

@@ -1,9 +1,9 @@
-# Good Code
+# Best Practices
 
 + https://www.youtube.com/watch?v=RJz1GlClG1M
 + https://itrevolution.com/book/accelerate/
 
-The goal of this project is to bring some objectivity into the question of what is (and what is not) good code. Specifically, what are the most meaningful measures of good code? How can one prove that code is good or bad?
+The goal of this project is to bring some objectivity into the question of Software Engineering best practices, for example, what is (and what is not) good code. Specifically, what are the most meaningful measures of good code? How can one prove that code is good or bad?
 
 Good Code should be,
 

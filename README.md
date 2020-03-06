@@ -13,7 +13,7 @@ secure
 
 fault-tolerant
 
-And while it's easy to list nice attribuets of good code, from test coverage to clean and readable style, good code always starts off as bad code. No one starts writing good code, we edit and massage bad code until it becomes better, and we continuously test and demo our *working* software to users and product managers, refining the code behind the scenes until it slowly approaches what might be considered good. But okay, what does that really mean?
+And while it's easy to list nice attribuets of good code, from test coverage to clean and readable style, good code always starts off as bad code. No one starts writing good code, we edit and massage bad code until it becomes better; we continuously test, and we demo our ***working*** software to our users and product managers, refining the code behind the scenes until it slowly approaches what might be considered good. But okay, what does that really mean?
 
 
 ## high performance

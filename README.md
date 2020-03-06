@@ -5,7 +5,7 @@
 
 The goal of this project is to bring some objectivity into the question of Software Engineering best practices, for example, what is (and what is not) good code. Specifically, what are the most meaningful measures of good code? How can one prove that code is good or bad?
 
-Good Code should be,
+Obviously, good Code should be,
 
 high performance
 
@@ -13,9 +13,11 @@ secure
 
 fault-tolerant
 
+And while it's easy to list all the nice attribuets of good code, from full test coverage to clean and readable style, good code always starts off as bad code. No one starts writing good code, we edit and massage bad code until it becomes better, and we continuously test and demo our *working* software to users and product managers, refining the code behind the scenes until it slowly approaches what might be considered good. But okay, what does that really mean?
+
 
 ## high performance
-An application should survive heavy load tests with reasonable performance characteristics (e.g., a well-designed http microservice should handle **at-least** 10,000 tps (transactions-per-second) on a single instance, and scale to 100,000 tps without significant degredation).
+An application should survive heavy load tests with reasonable performance characteristics (e.g., a well-designed http microservice should handle **at-least** 10,000 tps (transactions-per-second) on a single instance, and scale to 100,000 or even a million transactions-per-second without any significant degredation).
 
 gatling.io
 

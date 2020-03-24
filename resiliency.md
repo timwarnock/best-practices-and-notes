@@ -9,3 +9,8 @@ Multi-AZ will provide high-availability and no data loss (barring catastrophic f
 + activate lambda and SQS
 
 Both the API and UI layer simply need to be deployed as standby (or as read-only depending on the routing rules).
+
+
+## C1 requirements
+
++ Database must provide a valid [parameter group](https://pulse.kdc.capitalone.com/docs/DOC-182936)

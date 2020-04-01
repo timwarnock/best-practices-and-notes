@@ -102,7 +102,11 @@ Q: What are the primary differences between threads and processes?
 Q: What signal is typically sent, by convention, to reload configuration?  How do you send that signal on command line?
 
 Q: If you have installed a new dynamic library into a non-standard location, what steps must be taken for the system to recognize the new lib?
-(/etc/ld.so.conf ldconfig)
+```
+e.g., LD_LIBARY_PATH or DYLD_LIBRARY_PATH
+/etc/ld.so.conf
+ldconfig
+```
 
 
 ## Perl
@@ -143,3 +147,10 @@ SELECT name FROM people NATURAL LEFT JOIN tags GROUP BY people.people_id HAVING 
 ```
 
 
+## NoSQL
+
+Q: What are the main advantages and disadvantages of NoSQL over SQL?
+
+Q: How do you approach NoSQL data modelling?
+
+Q: Is it possible and advisable to normalize a NoSQL data model?

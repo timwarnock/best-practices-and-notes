@@ -131,7 +131,7 @@ ldconfig
 
 ## SQL
 
-- Describe LEFT, RIGHT, INNER, OUTER, and NATURAL joins
+- Describe `LEFT` and `RIGHT` joins? And `INNER` and `OUTER` joins? And `NATURAL` join?
 
 - Given the following schema, find all `people` records with two or less `tags`
 

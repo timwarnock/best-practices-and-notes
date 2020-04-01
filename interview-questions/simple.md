@@ -148,8 +148,8 @@ SELECT name FROM people NATURAL LEFT JOIN tags GROUP BY people.people_id HAVING 
 
 ## NoSQL
 
-Q: What are the main advantages and disadvantages of NoSQL over SQL?
+- What are the main advantages and disadvantages of NoSQL over SQL?
 
-Q: How do you approach NoSQL data modelling?
+- How do you approach NoSQL data modelling?
 
-Q: Is it possible and advisable to normalize a NoSQL data model?
+- Is it possible and advisable to normalize a NoSQL data model?

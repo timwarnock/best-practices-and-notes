@@ -102,7 +102,8 @@ Bonus: base-64 ? A-Za-z0-0+/
 
 - If you have installed a new dynamic library into a non-standard location, what steps must be taken for the system to recognize the new lib?
 ```
-e.g., LD_LIBARY_PATH or DYLD_LIBRARY_PATH
+e.g., 
+LD_LIBARY_PATH or DYLD_LIBRARY_PATH
 /etc/ld.so.conf
 ldconfig
 ```
@@ -110,13 +111,13 @@ ldconfig
 
 ## Perl
 
-- What does 'perl -w' do?
+- What does `perl -w` do?
 
 - What is strict mode? How do you enable it?
 
 - How do blessed references differ from regular ones?
 
-- How do you (?#comment) a regular expression?
+- How do you `(?#comment)` a regular expression?
 
 
 ## SQL
@@ -140,9 +141,17 @@ CREATE TABLE tags (
 
 possibilities,
 ```
-SELECT name FROM people LEFT JOIN tags ON people.people_id = tags.people_id GROUP BY people.people_id HAVING COUNT(*) <= 2;
+SELECT name 
+FROM people 
+LEFT JOIN tags ON people.people_id = tags.people_id 
+GROUP BY people.people_id 
+HAVING COUNT(*) <= 2;
 
-SELECT name FROM people NATURAL LEFT JOIN tags GROUP BY people.people_id HAVING COUNT(*) <= 2;
+SELECT name 
+FROM people 
+NATURAL LEFT JOIN tags 
+GROUP BY people.people_id 
+HAVING COUNT(*) <= 2;
 ```
 
 

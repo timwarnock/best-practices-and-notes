@@ -133,7 +133,7 @@ ldconfig
 
 - Describe LEFT, RIGHT, INNER, OUTER, and NATURAL joins
 
-- Given the following schema, find all "people" records with two or less "tags"
+- Given the following schema, find all `people` records with two or less `tags`
 
 ```
 CREATE TABLE people (

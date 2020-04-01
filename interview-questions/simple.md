@@ -1,8 +1,10 @@
-# "Full Stack" Questions
+# Questions for "Full Stack"
 
-- Do you consider yourself front-end or back-end developer? Where in the stack are you strongest?
-
+- Do you consider yourself front-end or back-end developer?
+```
 Full-stack? Guess again!
+```
+- Where in the stack are you strongest?
 
 
 ## Warm up

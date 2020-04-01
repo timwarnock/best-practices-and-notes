@@ -1,3 +1,10 @@
+# "Full Stack" Questions
+
+- Do you consider yourself front-end or back-end developer? Where in the stack are you strongest?
+
+Full-stack? Guess again!
+
+
 ## Warm up
 
 - When working on a new project, identify what you need and the steps you typically take before writing code.
@@ -39,7 +46,7 @@ Bonus: base-64 ? A-Za-z0-0+/
 - What is an iterator and when/why would three-statement-for loops be better?
 
 
-## “Full Stack”
+## Web
 
 - What is a DOCTYPE? Why would you ever include one in your document?
 
@@ -68,7 +75,7 @@ Bonus: base-64 ? A-Za-z0-0+/
 
 - What is an Optional (Option) and when is it useful?
 
-- What is the difference between map and flatMap?
+- What is the difference between `map` and `flatMap`?
 
 - What is Reflection? When is it appropriate to use?
 
@@ -85,7 +92,7 @@ Bonus: base-64 ? A-Za-z0-0+/
 
 - What is duck typing?  How does it differ from type checking?  How is it done in Python?
 
-- How does Python pass function parameters?  By value or reference?
+- How does Python pass function parameters? By value? By reference?
 
 - Explain dictionary comprehensions
 

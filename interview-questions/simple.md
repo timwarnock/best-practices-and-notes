@@ -1,4 +1,4 @@
-# Warm up
+## Warm up
 
 Q: When working on a new project, identify what you need and the steps you typically take before writing code.
 
@@ -13,7 +13,7 @@ for (i = 0; i < 10; ++i) if (i = 0) print("hello\n");
 ```
 
 
-# CS
+## CS
 
 Q: What is 63 in binary? *31? 15? 7? 3?*
 
@@ -61,7 +61,7 @@ Q: Write a search method for the built-in JavaScript array class
 Q: Write a JavaScript class with private static functions
 
 
-# Java8 / Scala / FP
+## Java8 / Scala / FP
 
 Q: What is an Optional (Option) and when is it useful?
 
@@ -70,7 +70,8 @@ Q: What is the difference between map and flatMap?
 Q: What is Reflection? When is it appropriate to use?
 
 
-# Python
+## Python
+
 Q: What is a docstring?
 
 Q: Explain the difference between files, modules, classes and packages
@@ -86,7 +87,7 @@ Q: How does Python pass function parameters?  By value or reference?
 Q: Explain dictionary comprehensions
 
 
-# POSIX
+## POSIX
 
 Q: Explain fork(), and how it differs from exec().
 
@@ -100,7 +101,7 @@ Q: If you have installed a new dynamic library into a non-standard location, wha
 (/etc/ld.so.conf ldconfig)
 
 
-# Perl
+## Perl
 
 Q: What does 'perl -w' do?
 
@@ -111,7 +112,7 @@ Q: How do blessed references differ from regular ones?
 Q: How do you (?#comment) a regular expression?
 
 
-# SQL
+## SQL
 
 Q: Describe LEFT, RIGHT, INNER, OUTER, and NATURAL joins
 

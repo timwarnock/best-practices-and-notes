@@ -15,7 +15,11 @@ for (i = 0; i < 10; ++i) if (i = 0) print("hello\n");
 
 ## CS
 
-Q: What is 63 in binary? *31? 15? 7? 3?*
+Q: What is 63 in binary? 
+```
+Hint: what about 31, 15, 7 ?
+Bonus: base-64 ?
+```
 
 Q: How do you write a bitmask to test for bit number 2?
 

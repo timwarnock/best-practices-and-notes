@@ -5,7 +5,9 @@
 Full-stack? Guess again!
 ```
 - Where in the stack are you strongest?
-
+```
+Let's find out!
+```
 
 ## Warm up
 

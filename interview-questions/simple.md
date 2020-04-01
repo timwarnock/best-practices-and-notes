@@ -18,7 +18,8 @@ Let's find out!
 - How do you typically test your code, how much of a role does QA play?
 
 - What is the output from executing the following:
-```
+
+```c
 for (i = 0; i < 10; ++i) if (i = 0) print("hello\n");
 ```
 
@@ -137,7 +138,7 @@ ldconfig
 
 - Given the following schema, find all `people` records with two or less `tags`
 
-```
+```sql
 CREATE TABLE people (
   people_id INTEGER UNSIGNED NOT NULL PRIMARY KEY,
   name VARCHAR(255)
@@ -150,8 +151,8 @@ CREATE TABLE tags (
 );
 ```
 
-possibilities,
-```
+Possibilities,
+```sql
 SELECT name 
 FROM people 
 LEFT JOIN tags ON people.people_id = tags.people_id 

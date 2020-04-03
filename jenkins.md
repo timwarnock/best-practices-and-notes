@@ -1,6 +1,8 @@
 ## Jenkins Notes
 
-### create `token` for Jenkins slackSend()
+### slack integration
+
+Create `token` for Jenkins slackSend()
 https://my.slack.com/services/new/jenkins-ci
 
 #### e.g.,
@@ -14,3 +16,8 @@ https://my.slack.com/services/new/jenkins-ci
       )
 
 ```
+
+
+### aws integration
+
+https://github-pages.cloud.capitalone.com/emerging-products/blog/2018/02/22/jenkins2x-and-aws.html

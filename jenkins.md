@@ -1,9 +1,9 @@
 ## Jenkins Notes
 
-## create `token` for Jenkins slackSend()
+### create `token` for Jenkins slackSend()
 https://my.slack.com/services/new/jenkins-ci
 
-### e.g.,
+#### e.g.,
 ```
       slackSend(
         channel: 'timothy.warnock',

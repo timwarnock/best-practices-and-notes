@@ -4,11 +4,12 @@
 
 Create `token` for Jenkins slackSend()
 https://my.slack.com/services/new/jenkins-ci
+https://jenkins.io/doc/pipeline/steps/slack/
 
 #### e.g.,
 ```
       slackSend(
-        channel: 'timothy.warnock',
+        channel: '@timothy.warnock',
         teamDomain: 'sharedtech-capitalone',
         token: 'C2UdP3ziEwupFr3JLV3TDsKF',
         color: '#ff0000',

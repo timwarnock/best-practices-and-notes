@@ -12,9 +12,9 @@ https://jenkins.io/doc/pipeline/steps/slack/
 #### e.g.,
 ```
       slackSend(
-        channel: '@timothy.warnock',
+        channel: '#example',
         teamDomain: 'sharedtech-capitalone',
-        token: 'C2UdP3ziEwupFr3JLV3TDsKF',
+        token: 'tokenfromabove',
         color: '#ff0000',
         message: "some message ${someVariable}"
       )

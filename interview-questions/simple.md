@@ -48,7 +48,7 @@ Bonus: base-64 ? A-Za-z0-0+/
 
 - Define encapsulation and polymorphism. Why are they overrated?
 
-- What is an iterator and when/why would three-statement-for loops be better?
+- What is an iterator and when/why would three-statement `for` loops be better?
 
 
 ## Web
@@ -80,7 +80,7 @@ Bonus: base-64 ? A-Za-z0-0+/
 
 - What is an Optional (Option) and when is it useful?
 
-- What is the difference between `map` and `flatMap`?
+- What is the difference between `map` and `flatMap`, and when to use each?
 
 - What is Reflection? When is it appropriate to use?
 
@@ -95,9 +95,9 @@ Bonus: base-64 ? A-Za-z0-0+/
 
 - If you have a list of keys and a list of values, create a dictionary
 
-- What is duck typing?  How does it differ from type checking?  How is it done in Python?
+- What is duck typing? How does it differ from type checking? How is it done in Python?
 
-- How does Python pass function parameters? By value? By reference?
+- How does Python pass function parameters? By value? By reference? Or something else?
 
 - Explain dictionary comprehensions
 

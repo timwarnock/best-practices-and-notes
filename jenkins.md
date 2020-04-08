@@ -1,12 +1,15 @@
 ## Jenkins Notes
 
+Declarative and Scripted syntax,
+
+https://jenkins.io/doc/book/pipeline/syntax/
+
+
 ### slack integration
 
-Create `token` for Jenkins slackSend()
+Create `token` for [Jenkins slackSend()](https://my.slack.com/services/new/jenkins-ci).
 
-https://my.slack.com/services/new/jenkins-ci
-
-https://jenkins.io/doc/pipeline/steps/slack/
+You can customize the name and image, and create as many tokens as you want (for different builds or build statuses).
 
 
 #### e.g.,
@@ -18,8 +21,22 @@ https://jenkins.io/doc/pipeline/steps/slack/
         color: '#ff0000',
         message: "some message ${someVariable}"
       )
+```
+
+Alternatively, save the `token` in Jenkins Credentials using type `secret text`. You can name the token whatever you want, and then refer to it by name, e.g.,
 
 ```
+      slackSend(
+        channel: '#example',
+        teamDomain: 'sharedtech-capitalone',
+        tokenCredentialId: 'example-slack',
+        color: '#ff0000',
+        message: "some message ${someVariable}"
+      )
+```
+
+See [slackSend docs](https://jenkins.io/doc/pipeline/steps/slack/) for more information.
+
 
 
 ### aws integration

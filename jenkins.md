@@ -1,8 +1,6 @@
 ## Jenkins Notes
 
-Declarative and Scripted syntax,
-
-https://jenkins.io/doc/book/pipeline/syntax/
+Declarative and Scripted [syntax](https://jenkins.io/doc/book/pipeline/syntax/)
 
 
 ### slack integration

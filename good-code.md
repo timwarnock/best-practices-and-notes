@@ -11,7 +11,9 @@ Obviously, good code should be
   + secure
   + fault-tolerant
 
-And while it's easy to list nice attributes of good code, from test coverage to a clean and readable style, good code always starts off as bad code. No one writes good code from scratch. We edit and massage bad code until it becomes better; we continuously test, and we demo our ***working*** software to users, refining the code until it slowly approaches what might be considered good. But okay, is there any way to measure this objectively?
+And while it's easy to list nice attributes of good code, from test coverage to a clean and readable style, good code always starts off as bad code. No one writes good code from scratch. We edit and massage bad code until it becomes better; we continuously test, and we demo our ***working*** software to our users, refining the code until it slowly approaches what might be considered good. 
+
+But okay, is there any way to measure this objectively?
 
 
 ## high performance

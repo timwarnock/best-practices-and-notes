@@ -1,11 +1,12 @@
-## Jenkins Notes
+# Jenkins Notes
 
 Declarative and Scripted [syntax](https://jenkins.io/doc/book/pipeline/syntax/)
 
-### skip stage
+## skip stage
 
 Jenkins scripted pipeline does not provide a way to skip a stage other than to wrap it in an if-condition (which unfortunately has the effect of behaving as if the stage never existed. The declarative pipelines offer the `when` syntax and can provide nice diagrams as follows,
 
+<img src="images/jenkins-skip.png">
 
 In order to get that same effect with a scripted library, you can override the `stage()` function to only execute if a condition is met.
 
@@ -29,7 +30,7 @@ Using this `stage()` function you can retain the existence of all stages and cle
 ```
 
 
-### slack integration
+## slack integration
 
 Create `token` for [Jenkins slackSend()](https://my.slack.com/services/new/jenkins-ci).
 
@@ -63,7 +64,7 @@ See [slackSend docs](https://jenkins.io/doc/pipeline/steps/slack/) for more info
 
 
 
-### aws integration
+## aws integration
 
 Enterprise Jenkins can communicate with AWS, typically inside a `bogieNode` using `awssume` (although it's possible to use `aws sts` manually if you so choose). In either case you will need to find the jenkins IAM role for your particular AWS account (in the aws console, search for "jenkins" in IAM roles).
 
@@ -79,7 +80,7 @@ stage('AWS Test') {
 ```
 
 
-### vault integration
+## vault integration
 
 Rather than keep sensitive data within Jenkins Credentials, you can also retrieve secrets from Chamber of Secrets (a wrapper around hashicorp vault). However, you must grant `approle` to your vault lockbox and save `role_id` and `secret_id` within Jenkins Credentials. The name of the Jenkins Credentials will be used in the Jenkinsfile.
 

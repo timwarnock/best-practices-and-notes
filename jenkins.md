@@ -21,7 +21,7 @@ def stage(name, execute, block) {
 }
 ```
 
-Using this new `stage()` function you can retain the existence of all stages and clearly mark which stages were skipped. For example,
+Using this new `stage()` function is easy. Simply add a parameter to any existing `stage()` blocks to determine when that stage should be run. For example,
 
 ```groovy
   stage('DEV', !params.DEV.startsWith('--')) {

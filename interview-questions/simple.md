@@ -173,4 +173,4 @@ HAVING COUNT(*) <= 2;
 
 - How do you approach NoSQL data modelling?
 
-- Is it possible and advisable to normalize a NoSQL data model?
+- Is it possible or advisable to normalize a NoSQL data model? Why or why not?

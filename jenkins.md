@@ -62,9 +62,10 @@ cosConfig = [$class: 'VaultConfiguration',
               vaultUrl: 'https://chamber-qa.clouddqt.capitalone.com',
               vaultCredentialId: 'tpm-cos-qa']
 cosSecretConf = []
+lockbox_id = "your-lockbox-id"
 for (secret in ['MY_SECRET', 'MY_OTHER_SECRET']) {
   cosSecretConf.add(
-      [$class: 'VaultSecret', path: "${lockbox}/${secret}",
+      [$class: 'VaultSecret', path: "${lockbox_id}/${secret}",
        secretValues: [[$class: 'VaultSecretValue', envVar: "${secret}", vaultKey: "${secret}"]]]
   )
 }
@@ -77,3 +78,4 @@ stage('CoS Test') {
 }
 ```
 
+For more information on configuring Chamber of Secrets, see the [official docs](https://github-pages.cloud.capitalone.com/ChamberOfSecretsDocumentation/ChamberOfSecrets), or the [helper scripts](https://github.cloud.capitalone.com/bcg/tpm-infrastructure/tree/master/cos) we use for TPM (specifically the section on [grant-approle](https://github.cloud.capitalone.com/bcg/tpm-infrastructure/tree/master/cos#grant-approle).

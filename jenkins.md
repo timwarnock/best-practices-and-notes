@@ -2,6 +2,32 @@
 
 Declarative and Scripted [syntax](https://jenkins.io/doc/book/pipeline/syntax/)
 
+### skip stage
+
+Jenkins scripted pipeline does not provide a way to skip a stage other than to wrap it in an if-condition (which unfortunately has the effect of behaving as if the stage never existed. The declarative pipelines offer the `when` syntax and can provide nice diagrams as follows,
+
+
+In order to get that same effect with a scripted library, you can override the `stage()` function to only execute if a condition is met.
+
+```groovy
+import org.jenkinsci.plugins.pipeline.modeldefinition.Utils
+
+def stage(name, execute, block) {
+  return stage(name, execute ? block : {
+    echo "Skip stage $name"
+    Utils.markStageSkippedForConditional(STAGE_NAME)
+  })
+}
+```
+
+Using this `stage()` function you can retain the existence of all stages and clearly mark which stages were skipped. For example,
+
+```groovy
+  stage('DEV', !params.DEV.startsWith('--')) {
+    // do something only if the user selected a valid DEV choice
+  }
+```
+
 
 ### slack integration
 

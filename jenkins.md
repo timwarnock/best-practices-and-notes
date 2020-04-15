@@ -39,12 +39,41 @@ See [slackSend docs](https://jenkins.io/doc/pipeline/steps/slack/) for more info
 
 ### aws integration
 
-https://github-pages.cloud.capitalone.com/emerging-products/blog/2018/02/22/jenkins2x-and-aws.html
+Enterprise Jenkins can communicate with AWS, typically inside a `bogieNode` using `awssume` (although it's possible to use `aws sts` manually if you so choose). In either case you will need to find the jenkins IAM role for your particular AWS account (in the aws console, search for "jenkins" in IAM roles).
+
+```groovy
+stage('AWS Test') {
+  bogieNode {
+    env.AWS_ROLE_ARN = 'arn:aws:iam::accountnumber:role/CapOne-Group-Env-CustomRole-jenkins'
+    sh("""
+      awssume aws rds describe-db-clusters
+    """)
+  }
+}
+```
 
 
 ### vault integration
 
-https://github.cloud.capitalone.com/prometheus/perf-test/blob/ec40122edd2891a20f1ac94cb7117b7047ec926c/Jenkinsfile
+Rather than keep sensitive data within Jenkins Credentials, you can also retrieve secrets from Chamber of Secrets (a wrapper around hashicorp vault). However, you must grant `approle` to your vault lockbox and save `role_id` and `secret_id` within Jenkins Credentials. The name of the Jenkins Credentials will be used in the Jenkinsfile.
 
-https://github.cloud.capitalone.com/CloudX/phoenix-db/blob/c800dfa9b4d8b6bcf70d847af3bb2b4b6831713b/Jenkinsfile
+```groovy
+cosConfig = [$class: 'VaultConfiguration',
+              vaultUrl: 'https://chamber-qa.clouddqt.capitalone.com',
+              vaultCredentialId: 'tpm-cos-qa']
+cosSecretConf = []
+for (secret in ['MY_SECRET', 'MY_OTHER_SECRET']) {
+  cosSecretConf.add(
+      [$class: 'VaultSecret', path: "${lockbox}/${secret}",
+       secretValues: [[$class: 'VaultSecretValue', envVar: "${secret}", vaultKey: "${secret}"]]]
+  )
+}
+
+stage('CoS Test') {
+  wrap([$class: 'VaultBuildWrapper', configuration: cosConfig, vaultSecrets: cosSecretConf]) {
+    // "${MY_SECRET} is now available"
+    // "${MY_OTHER_SECRET} is also available"
+  }
+}
+```
 

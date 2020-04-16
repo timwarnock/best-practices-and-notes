@@ -106,3 +106,8 @@ stage('CoS Test') {
 ```
 
 For more information on configuring Chamber of Secrets, see the [official docs](https://github-pages.cloud.capitalone.com/ChamberOfSecretsDocumentation/ChamberOfSecrets), or the [helper scripts](https://github.cloud.capitalone.com/bcg/tpm-infrastructure/tree/master/cos) we use for TPM (specifically the section on [grant-approle](https://github.cloud.capitalone.com/bcg/tpm-infrastructure/tree/master/cos#grant-approle)).
+
+
+## Qualys integration
+
+https://pulse.kdc.capitalone.com/blogs/mandeep/2020/01/13/how-to-add-qualys-image-scanning-to-your-jenkins-pipeline-job

@@ -2,7 +2,7 @@
 
 Declarative and Scripted [syntax](https://jenkins.io/doc/book/pipeline/syntax/)
 
-## skip stage
+## Skip Stage
 
 Jenkins scripted pipeline does not provide a way to skip a stage other than to wrap it in an if-condition (which unfortunately has the effect of behaving as if the stage never existed). The declarative pipelines offer the `when` syntax and can provide nice diagrams as follows,
 
@@ -30,7 +30,7 @@ Using this new `stage()` function is easy. Simply add a parameter to any existin
 ```
 
 
-## slack integration
+## Slack Integration
 
 Create `token` for [Jenkins slackSend()](https://my.slack.com/services/new/jenkins-ci).
 
@@ -64,7 +64,7 @@ See [slackSend docs](https://jenkins.io/doc/pipeline/steps/slack/) for more info
 
 
 
-## aws integration
+## AWS Integration
 
 Enterprise Jenkins can communicate with AWS, typically inside a `bogieNode` using `awssume` (although it's possible to use `aws sts` manually if you so choose). In either case you will need to find the jenkins IAM role for your particular AWS account (in the aws console, search for "jenkins" in IAM roles).
 
@@ -80,7 +80,7 @@ stage('AWS Test') {
 ```
 
 
-## vault integration
+## Vault Integration
 
 Rather than keep sensitive data within Jenkins Credentials, you can also retrieve secrets from Chamber of Secrets (a wrapper around hashicorp vault). However, you must grant `approle` to your vault lockbox and save `role_id` and `secret_id` within Jenkins Credentials. The name of the Jenkins Credentials will be used in the Jenkinsfile.
 
@@ -108,6 +108,6 @@ stage('CoS Test') {
 For more information on configuring Chamber of Secrets, see the [official docs](https://github-pages.cloud.capitalone.com/ChamberOfSecretsDocumentation/ChamberOfSecrets), or the [helper scripts](https://github.cloud.capitalone.com/bcg/tpm-infrastructure/tree/master/cos) we use for TPM (specifically the section on [grant-approle](https://github.cloud.capitalone.com/bcg/tpm-infrastructure/tree/master/cos#grant-approle)).
 
 
-## Qualys integration
+## Qualys Integration
 
 https://pulse.kdc.capitalone.com/blogs/mandeep/2020/01/13/how-to-add-qualys-image-scanning-to-your-jenkins-pipeline-job

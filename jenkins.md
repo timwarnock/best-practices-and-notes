@@ -34,6 +34,8 @@ Using this new `stage()` function is easy. Simply add a parameter to any existin
 
 Like the above conditional stages, parallel stages were introduced in declarative pipelines; however, you can leverage them in scripted pipelines and combine that capability with the skip stage functionality from above, e.g.,
 
+<img src="images/jenkins-parallel.png">
+
 ```groovy
   stage('QA') {
     def qaStages = [:]

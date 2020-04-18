@@ -30,6 +30,35 @@ Using this new `stage()` function is easy. Simply add a parameter to any existin
 ```
 
 
+## Parallel Stages
+
+Like the above conditional stages, parallel stages were introduced in declarative pipelines; however, you can leverage them in scripted pipelines and combine that capability with the skip stage functionality from above, e.g.,
+
+```groovy
+  stage('QA') {
+    def qaStages = [:]
+
+    qaStages["QAE1"] = {
+      stage('QAE1', !params.QAE1.startsWith('--')) {
+        bogieNode('qa') {
+          ...
+        }
+      }
+    }
+
+    qaStages["QAW2"] = {
+      stage('QAW2', !params.QAW2.startsWith('--')) {
+        bogieNode('qa', 'us-west-2') {
+          ...
+        }
+      }
+    }
+
+    parallel qaStages
+  }
+```
+
+
 ## Slack Integration
 
 Create `token` for [Jenkins slackSend()](https://my.slack.com/services/new/jenkins-ci).

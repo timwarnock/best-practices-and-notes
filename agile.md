@@ -3,9 +3,9 @@
 "Agile often puts processes over people, and it’s pushing women engineers into non-technical roles."
 
 Interview with [Mary Poppendieck](http://www.leanessays.com/),
-https://builtin.com/software-engineering-perspectives/lean-agile-methodology-software-engineering
-http://www.leanessays.com/2019/07/grown-up-lean.html
-http://www.leanessays.com/2017/11/the-cost-center-trap.html
++ https://builtin.com/software-engineering-perspectives/lean-agile-methodology-software-engineering
++ http://www.leanessays.com/2019/07/grown-up-lean.html
++ http://www.leanessays.com/2017/11/the-cost-center-trap.html
 
 "At the time, software development was suffering from a mistaken belief: that building things fast and building things well were fundamentally opposed."
 

@@ -17,7 +17,7 @@ But okay, is there any way to measure this objectively?
 
 
 ## high performance
-An application should survive heavy load tests with reasonable performance characteristics (e.g., a well-designed HTTP "microservice" (yes, those are ironic quotes) should handle **at-least** 10,000 tps (transactions-per-second) on a single instance, and scale to 100,000 or even a million transactions-per-second without any significant degredation).
+An application should survive heavy load tests with reasonable performance characteristics. E.g., a well-designed HTTP "microservice" (yes, those are ironic quotes) should handle **at-least** 10,000 tps (transactions-per-second) on a single instance, and scale to 100,000 or even a million transactions-per-second without any significant degredation.
 
 gatling.io
 

@@ -2,6 +2,7 @@
 
 + https://www.youtube.com/watch?v=RJz1GlClG1M
 + https://itrevolution.com/book/accelerate/
++ [Westrum Model](https://qualitysafety.bmj.com/content/13/suppl_2/ii22)
 
 What is (and what is not) good code? Specifically, what are the most meaningful measures of good code? How can one prove that code is good or bad?
 

@@ -6,7 +6,7 @@ What is a Good Software Engineering Team? How would you even measure that?
 
 ## The Goal
 
-A successful organization must have an inspiring goal, a shared vision that unites different teams and technologies. Without an inspiring and shared goal, the organization will fall into a default Bureaucratic Culture (a rule-oriented culture). In that environment software developers will adopt what is known as a mercenary mindset. What's worse, due to [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law), these mercenary-minded developers will create products that reflect the bureaucratic communication channels between teams within the organization -- and will NOT meet the goals of the users.
+A successful organization must have an inspiring goal, a shared vision that unites different teams and technologies. Without an inspiring and shared goal, an organization will fall into a default Bureaucratic Culture (a rule-oriented culture). In that environment software developers will adopt what is known as a *mercenary mindset*. What's worse, due to [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law), these mercenary-minded developers will create products and services that reflect the bureaucratic communication channels between teams within the organization -- and will NOT meet the goals of the users.
 
 
 ## Measures

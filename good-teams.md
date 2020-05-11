@@ -69,6 +69,14 @@ Also known as *Generative Culture*, a Performance-oriented Culture values the mi
 Software created in a Performance-oriented Culture will tend to have a Loosely Coupled architecture (due to [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law)), with deployments that are fast (minutes) and frequent (on-demand, several times per-day), taking full advantage of a fully automated CI/CD pipeline.
 
 
+## Changing the Culture
+
+See Conway's Law
+
+*"Make sure the organization is compatible with the product architecture."*
+
+*"Organisations often produce web sites with a content and structure which mirrors the internal concerns of the organisation rather than the needs of the users of the site."
+
 
 ## Refs
 

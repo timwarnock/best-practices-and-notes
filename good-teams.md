@@ -73,9 +73,12 @@ Software created in a Performance-oriented Culture will tend to have a Loosely C
 
 See Conway's Law
 
+*"Organisations often produce web sites with a content and structure which mirrors the internal concerns of the organisation rather than the needs of the users of the site."*
+
+### Inverse Conway Maneuver
+
 *"Make sure the organization is compatible with the product architecture."*
 
-*"Organisations often produce web sites with a content and structure which mirrors the internal concerns of the organisation rather than the needs of the users of the site."
 
 
 ## Refs

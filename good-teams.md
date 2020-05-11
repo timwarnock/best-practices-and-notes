@@ -71,3 +71,4 @@ Software created in a Performance-oriented Culture will tend to have a Loosely C
 + https://itrevolution.com/book/accelerate/
 + [Westrum Model](https://qualitysafety.bmj.com/content/13/suppl_2/ii22)
 
++ [Inverse Conway Maneuver](https://www.thoughtworks.com/radar/techniques/inverse-conway-maneuver)

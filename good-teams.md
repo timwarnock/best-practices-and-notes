@@ -15,27 +15,30 @@ What to measure? Or more usefully, what can we easily measure that is a strong p
 
 ### Positive Measures
 
-+ Lead-Time -- *from code commit to production*
 + Deployment Frequency -- *how often do you deploy to production?*
++ Lead-Time -- *from code-commit to production*
 + Mean-Time-To-Repair (MTTR)
 + *Change Failure Rate*
 
-More usefully, the first three (as a cluster) predict the *fourth measure*. In other words, the most stable systems (with the lowest failure rates) are the systems that have fast and frequent deployments in a fully-automated CI/CD pipeline. A fully automated CI/CD pipeline is an essential and necesary piece of building quality software, but as we'll see, a lot more is needed!
+More usefully, the first three (as a cluster) predict the *fourth measure*. In other words, the most stable systems (with the lowest failure rates) are the systems that have fast and most frequent deployments in a fully-automated CI/CD pipeline. A fully automated CI/CD pipeline is an essential and necesary piece of building quality software, but as we'll see, it's not so easy to do.
 
 ### Negavitve Measures
 
-In other words, what **NOT TO DO**? This may defy conventional wisdom, but the following practices are negative-predictors towards quality software. In other words, they are not only highly correlated with bad software, the mere existence of the following will predict a lower quality of software, increased failure rate, and increased security risks.
+In other words, what **NOT TO DO**? This may defy conventional wisdom, but the following practices are negative-predictors towards quality software. In other words, they are not only highly correlated with bad software, the mere existence of the following will predict a higher failure rate, and increased security risks.
 
 + Change Approval Board
-+ Velocity -- *in the Scrum context*
++ Velocity -- *in the Agile/Scrum context*
 + Utilization -- *"as utilization approaches 100%, Lead-Time approaches infinity"*
 
 
 ### Meaningless Measures
 
+Surprisingly, the following common measures provide no strong correlation whatsover between high-performing teams and low-performing teams. These are not negatively correlated (and thus may still be important factors within your organization); but they simply do not correlate to the overall quality and stability of your software.
+
 + Age of technology (mainframe vs distributed microservices)
 + Whether Ops team or Dev team performs deployments
-+ Lines of Code
++ Unit-test coverage
++ Lines of code
 
 
 

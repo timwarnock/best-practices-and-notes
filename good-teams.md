@@ -48,7 +48,7 @@ And while the size of an organization will not predict software quality, it is t
 
 ## Culture Matters
 
-Westrum Model of Organiztaional Culture
+Westrum Model of Organizational Culture
 
 ### Power-oriented
 

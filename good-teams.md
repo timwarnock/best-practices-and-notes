@@ -36,10 +36,12 @@ In other words, what **NOT TO DO**? This may defy conventional wisdom, but the f
 Surprisingly, the following common measures provide no strong correlation whatsover between high-performing teams and low-performing teams. These are not negatively correlated (and thus may still be important factors within your organization); but they simply do not correlate to the overall quality and stability of your software.
 
 + Age of technology (mainframe vs distributed microservices)
++ Size of the organization
 + Whether Ops team or Dev team performs deployments
 + Unit-test coverage
 + Lines of code
 
+This isn't to say that any of the above is meaningless, far from it, but it's important to understand that these measures will not predict the quality and stability of your software. In other words, there are teams ingrating with an ancient mainframe (and no unit-tests) that are outperforming teams with a microservice architecture and 100% unit-test coverage.
 
 
 ## Culture Matters
@@ -50,21 +52,21 @@ Westrum Model of Organiztaional Culture
 
 Also known as *Pathological Culture*, a Power-oriented Culture values individual goals over organizational goals, where the loudest and most powerful voice in the room gets their way. Communication does not flow easily, and problems are typically suppressed.
 
-Software created in a Power-oriented Culture will tend to be a Tightly Coupled architecture (due to [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law)) that will reflect the particular whims of whoever has the loudest voice.
+Software created in a Power-oriented Culture will tend to be a Tightly Coupled architecture (due to [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law)) that will reflect the particular whims of whoever has the most powerful voice (typically whoever is at the top of the hierarchy).
 
 
 ### Rule-oriented
 
-Also known as *Bureaucratic Culture*, a Rule-oriented Culture values departmental goals over organizational goals, and is the default culture for most large organizations. While potentially friendly, information flow is stymied by bureaucratic approvals, and problems are often ignored. Often times the emphasis is on being nice and well-liked, rather than building quality software that makes users happy.
+Also known as *Bureaucratic Culture*, a Rule-oriented Culture values departmental goals over organizational goals, and is the default culture for most large organizations. While often friendly, information flow is stymied by bureaucratic approvals, and problems are typically ignored. Often times the emphasis is on being nice and well-liked, rather than building quality software (and making users happy).
 
-Software created in a Rule-oriented Culture will tend to have a Tightly Coupled architecture (due to [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law)) that will reflect the particular bureaucratic communication channels between teams. There is likely a Change Approval Board, with deployments that are slower (measured in hours) and less-frequent (weekly or monthly) than what a fully automated CI/CD pipeline could otherwise provide.
+Software created in a Rule-oriented Culture will tend to have a Tightly Coupled architecture (due to [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law)) that will reflect the particular bureaucratic communication channels between teams. There is likely a Change Approval Board, with deployments that are slower (measured in hours) and less-frequent (weekly or more) than what a fully automated CI/CD pipeline could otherwise provide.
 
 
 ### Performance-oriented
 
 Also known as *Generative Culture*, a Performance-oriented Culture values the mission of the organization over all else. It is in this environment where developers adopt a missionary mindset (rather than the more common mercenary mindset). Information flows easily, problems and failures are discussed openly (in fact, those discussions are encouraged).
 
-Software created in a Performance-oriented Culture will tend to have a Loosely Coupled architecture (due to [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law)), with deployments that are fast (minutes) and frequent (on-demand, several times per-day), taking full advantage of an automated CI/CD pipeline.
+Software created in a Performance-oriented Culture will tend to have a Loosely Coupled architecture (due to [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law)), with deployments that are fast (minutes) and frequent (on-demand, several times per-day), taking full advantage of a fully automated CI/CD pipeline.
 
 
 

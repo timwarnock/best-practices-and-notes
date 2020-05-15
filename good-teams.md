@@ -54,14 +54,14 @@ Westrum Model of Organizational Culture
 
 Also known as *Pathological Culture*, a Power-oriented Culture values individual goals over organizational goals, where the loudest and most powerful voice in the room gets their way. Communication does not flow easily, and problems are typically suppressed.
 
-Software created in a Power-oriented Culture will tend to be a Tightly Coupled architecture (due to [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law)) that will reflect the particular whims of whoever has the most powerful voice (typically whoever is at the top of the hierarchy).
+Software created in a Power-oriented Culture will tend to be a Tightly Coupled architecture (due to [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law)) and will reflect the particular whims of whoever has the most powerful voice (typically whoever is at the top of the hierarchy).
 
 
 ### Rule-oriented
 
 Also known as *Bureaucratic Culture*, a Rule-oriented Culture values departmental goals over organizational goals, and is the default culture for most large organizations. While often friendly, information flow is stymied by bureaucratic approvals, and problems are typically ignored. Often times the emphasis is on being nice and well-liked, rather than building quality software (and making users happy).
 
-Software created in a Rule-oriented Culture will tend to have a Tightly Coupled architecture (due to [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law)) that will reflect the particular bureaucratic communication channels between teams. There is likely a Change Approval Board, with deployments that are slower (measured in hours) and less-frequent (weekly or more) than what a fully automated CI/CD pipeline could otherwise provide.
+Software created in a Rule-oriented Culture will tend to have a Tightly Coupled architecture (due to [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law)) and will reflect the particular bureaucratic communication channels between teams. There is likely a Change Approval Board, with deployments that are slower (measured in hours) and less-frequent (weekly or more) than what a fully automated CI/CD pipeline could otherwise provide.
 
 
 ### Performance-oriented

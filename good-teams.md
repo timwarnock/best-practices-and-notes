@@ -33,7 +33,7 @@ In other words, what **NOT TO DO**? This may defy conventional wisdom, but the f
 
 ### Meaningless Measures
 
-Surprisingly, the following common measures provide no strong correlation whatsover between high-performing teams and low-performing teams. These are not negatively correlated (and thus may still be important factors within your organization); but they simply do not correlate to the overall quality and stability of your software.
+Surprisingly, the following common measures provide no correlation whatsover between high-performing teams and low-performing teams. These are not negatively correlated (and thus may still be important factors within your organization); but they simply do not correlate to the overall quality and stability of your software, and should not be used as comparative measures.
 
 + Age of technology (mainframe vs distributed microservices)
 + Size of the organization
@@ -41,9 +41,9 @@ Surprisingly, the following common measures provide no strong correlation whatso
 + Unit-test coverage
 + Lines of code
 
-This isn't to say that any of the above is meaningless, far from it, but it's important to understand that these measures will not predict the quality and stability of your software. In other words, there are teams ingrating with an ancient mainframe (and no unit-tests) that are outperforming teams with a microservice architecture and 100% unit-test coverage.
+This isn't to say that the above items are themselves meaningless, far from it, but it's important to understand that these measures will not predict the quality and stability of your software. For example, there are teams ingrating with ancient mainframes (and no unit-tests) that are outperforming teams with a microservice architecture and 100% unit-test coverage.
 
-And while the size of an organization will not predict software quality, it is true that high-performing teams tend to scale much easier (although scaling requires a loosely coupled architecture more than anything else).
+And while the size of an organization will not predict software quality, it is true that high-performing teams tend to scale much easier (scaling on organization requires a loosely coupled architecture more than anything else).
 
 
 ## Culture Matters

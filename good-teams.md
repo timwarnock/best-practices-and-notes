@@ -43,7 +43,7 @@ Surprisingly, the following common measures provide no strong correlation whatso
 
 This isn't to say that any of the above is meaningless, far from it, but it's important to understand that these measures will not predict the quality and stability of your software. In other words, there are teams ingrating with an ancient mainframe (and no unit-tests) that are outperforming teams with a microservice architecture and 100% unit-test coverage.
 
-And while the size of an organization will not predict software quality, it is true that high-performing teams tend to scale much easier (although this is better predicted by loosely coupled architectures than anything else).
+And while the size of an organization will not predict software quality, it is true that high-performing teams tend to scale much easier (although scaling requires a loosely coupled architecture more than anything else).
 
 
 ## Culture Matters

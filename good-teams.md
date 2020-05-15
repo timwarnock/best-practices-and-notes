@@ -24,7 +24,7 @@ More usefully, the first three (as a cluster) predict the *fourth measure*. In o
 
 ### Negavitve Measures
 
-In other words, what **NOT TO DO**? This may defy conventional wisdom, but the following practices are negative-predictors towards quality software. In other words, they are not only highly correlated with bad software, the mere existence of the following will predict a higher failure rate, and increased security risks.
+In other words, what **NOT TO DO**? This may defy conventional wisdom, but the following practices are negative-predictors towards quality software. In other words, they are not only highly correlated with bad software, the mere existence of the following will predict a higher failure rate, as well as increased security risks.
 
 + Change Approval Board
 + Velocity -- *in the Agile/Scrum context*

@@ -6,7 +6,7 @@ What is a Good Software Engineering Team? How would you even measure that?
 
 ## The Goal
 
-A successful organization must have an inspiring goal, a shared vision that unites different teams and technologies. Without an inspiring and shared goal, an organization will fall into a default Bureaucratic Culture (a rule-oriented culture). In that environment software developers will adopt what is known as a *mercenary mindset*. What's worse, due to [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law), these mercenary-minded developers will create products and services that reflect the bureaucratic communication channels between teams within the organization -- and will NOT meet the goals of the users.
+A successful organization must have an inspiring goal, a shared vision that unites different teams and technologies. Without an inspiring and shared goal, an organization most likely fall into a default Bureaucratic Culture (a rule-oriented culture). In that environment software developers will adopt what is known as a *mercenary mindset*. What's worse, due to [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law), these mercenary-minded developers will create products and services that reflect the bureaucratic communication channels between teams within the organization -- and will NOT meet the goals of the users.
 
 
 ## Measures
@@ -20,7 +20,7 @@ What to measure? Or more usefully, what can we easily measure that is a strong p
 + Mean-Time-To-Repair (MTTR)
 + *Change Failure Rate*
 
-More usefully, the first three (as a cluster) predict the *fourth measure*. In other words, the most stable systems (with the lowest failure rates) are the systems that have fast and most frequent deployments in a fully-automated CI/CD pipeline. A fully automated CI/CD pipeline is an essential and necesary piece of building quality software, but as we'll see, it's not so easy to do.
+More usefully, the first three (as a cluster) predict the *fourth measure*. In other words, the most stable systems (with the lowest failure rates) are the systems that have fast and most frequent deployments in a fully-automated CI/CD pipeline. A fully automated CI/CD pipeline is an essential and necesary piece of building quality software, but as we'll see, there's much more to consider.
 
 ### Negavitve Measures
 

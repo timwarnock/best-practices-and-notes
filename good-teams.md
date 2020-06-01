@@ -1,12 +1,14 @@
 # Good Teams
 
-What is a Good Software Engineering Team? How would you even measure that? 
+What is a Good Software Engineering Team? How would you measure that? 
 
 *Notes from DevOps and Lean Software research.*
 
 ## The Goal
 
-A successful organization must have an inspiring goal, a shared vision that unites different teams and technologies. Without an inspiring and shared goal, an organization most likely fall into a default Bureaucratic Culture (a rule-oriented culture). In that environment software developers will adopt what is known as a *mercenary mindset*. What's worse, due to [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law), these mercenary-minded developers will create products and services that reflect the bureaucratic communication channels between teams within the organization -- and will NOT meet the goals of the users.
+A successful organization must have an inspiring goal, a shared vision that unites different teams and technologies. Without an inspiring (and shared) goal, an organization will inevitably fall into a default Bureaucratic Culture (a rule-oriented culture). In that environment software developers will adopt what is known as a *mercenary mindset*. What's worse, due to [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law), these mercenary-minded developers will create output (products, services, platforms, etc) that reflect the bureaucratic communication channels between teams within the organization -- and will NOT meet the goals of the users.
+
+A good team will build quality products (services, platforms, etc) that solve real problems; and in order to be successful a team will require a Generative Culture, an inspiring vision, and the responsibility of fast and frequent deployments.
 
 
 ## Measures
@@ -24,7 +26,7 @@ More usefully, the first three (as a cluster) predict the *fourth measure*. In o
 
 ### Negavitve Measures
 
-In other words, what **NOT TO DO**? This may defy conventional wisdom, but the following practices are negative-predictors towards quality software. In other words, they are not only highly correlated with bad software, the mere existence of the following will predict a higher failure rate, as well as increased security risks.
+In other words, what **NOT TO DO**? This may defy conventional wisdom, but the following are negative-predictors towards quality software. In other words, they are not only highly correlated with bad software, the mere existence of the following will predict a higher failure rate, as well as increased security risks.
 
 + Change Approval Board
 + Velocity -- *in the Agile/Scrum context*
@@ -43,7 +45,7 @@ Surprisingly, the following common measures provide no correlation whatsover bet
 
 This isn't to say that the above items are themselves meaningless, far from it, but it's important to understand that these measures will not predict the quality and stability of your software. For example, there are teams ingrating with ancient mainframes (and no unit-tests) that are outperforming teams with a microservice architecture and 100% unit-test coverage.
 
-And while the size of an organization will not predict software quality, it is true that high-performing teams tend to scale much easier (scaling on organization requires a loosely coupled architecture more than anything else).
+And while the size of an organization will not predict software quality, it is true that high-performing teams tend to scale much easier (scaling an organization requires a loosely coupled architecture more than anything else).
 
 
 ## Culture Matters
@@ -81,6 +83,29 @@ See Conway's Law
 
 *"Make sure the organization is compatible with the product architecture."*
 
+Organize the teams and their communication structure to match the desired architecture. This will require cross-functional teams that adhere to Lean principles.
+
+### Learning and Experimentation
+
+Continuous learning
+
+### Tools and Technologies
+
+Team must be free to choose their tools.
+
+Tool makers can not force the use of their tool.
+
+The tools must make the developer's life easier. Just as a high-performing team focuses on solving the problems of their users, tool makers must treat other developers as their users and solve their problems (with attention to usability, accessibility, and customer satisfaction).
+
+### Lean Management
+
+Adopt, Adapt, Adept 
+
++ Lightweight Change Management
++ Limited WIP
++ Visual Feedback (of production usage)
+
+Compare this to a bureaucratic Change Approval Board, which in practice results in Risk Management Theater, or InfoSec Theater, rather than actual risk managements and security.
 
 
 ## Refs

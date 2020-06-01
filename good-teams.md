@@ -79,35 +79,33 @@ See Conway's Law
 
 *"Organisations often produce web sites with a content and structure which mirrors the internal concerns of the organisation rather than the needs of the users of the site."*
 
-### Inverse Conway Maneuver
+See Inverse Conway Maneuver
 
 *"Make sure the organization is compatible with the product architecture."*
 
-Organize the teams and their communication structure to match the desired architecture. This will require cross-functional teams that adhere to Lean principles.
+The best way to change the culture is through an Inverse Conway Maneuver. Organize the teams and their communication channels to match the desired architecture. This will require cross-functional teams that adhere to Lean management, as well as a culture of Learning and Experimentation.
 
 ### Learning and Experimentation
 
 Continuous learning
 
-### Tools and Technologies
-
-Team must be free to choose their tools.
+Team must be free to choose their tools, and change those tools as requirements are better understood.
 
 Tool makers can not force the use of their tool.
 
-The tools must make the developer's life easier. Just as a high-performing team focuses on solving the problems of their users, tool makers must treat other developers as their users and solve their problems (with attention to usability, accessibility, and customer satisfaction).
+Tools must make the developer's life easier. Just as a high-performing team focuses on solving the problems of their users, tool makers must treat other developers as their users and solve their problems (with attention to usability, accessibility, and customer satisfaction).
 
 ### Lean Management
 
-Adopt, Adapt, Adept 
+*Adopt, Adapt, Adept*
 
 + Lightweight Change Management
 + Limited WIP
 + Visual Feedback (of production usage)
 
-Compare this to a bureaucratic Change Approval Board, which in practice results in Risk Management Theater, or InfoSec Theater, rather than actual risk managements and security.
+Compare this to a bureaucratic Change Approval Board, which in practice results in Risk Management Theater, or InfoSec Theater, rather than actual risk-managements and security.
 
-The best visual feedback will tie the small incremental changes to measures of customer satisfaction. For example, this could include user-engagement metrics, as well as advanced A/B testing (such as multi-armed-bandit algorithms).
+The best visual feedback will tie small incremental changes to measures of customer satisfaction. For example, this could include user-engagement metrics, as well as feedback from advanced A/B testing (such as multi-armed-bandit algorithms).
 
 
 ## Refs

@@ -1,6 +1,6 @@
 # Good Teams
 
-What is a Good Software Engineering Team? How would you measure that? 
+What is a *Good* software engineering team? How would you measure that? 
 
 *Notes from DevOps and Lean Software research.*
 

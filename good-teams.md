@@ -107,6 +107,8 @@ Adopt, Adapt, Adept
 
 Compare this to a bureaucratic Change Approval Board, which in practice results in Risk Management Theater, or InfoSec Theater, rather than actual risk managements and security.
 
+The best visual feedback will tie the small incremental changes to measures of customer satisfaction. For example, this could include user-engagement metrics, as well as advanced A/B testing (such as multi-armed-bandit algorithms).
+
 
 ## Refs
 

@@ -94,7 +94,7 @@ Inverse Conway Maneuver:
 
 Continuous learning
 
-Team must be free to choose their tools, and change those tools as they the customer's problems are better understood.
+Team must be free to choose their tools, and change those tools as their customer's problems are better understood.
 
 Tool makers can not force the use of their tool!
 

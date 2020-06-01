@@ -2,7 +2,16 @@
 
 What are the characteristics of Good Architecture? Opinions vary, but what can the data tell us?
 
+## Focus on Engineers
 
+Architects must focus on Engineers and not tools or technologies.
+
+Choose tools and technologies that empower the engineers to produce the right outcomes. What are the right outcomes? Solutions to customer's problems. Nothing more.
+
+
+## Loosely Coupled
+
+Empowered teams are responsibile to create the right solutions which are loosely coupled from one another.  This is the most important part of software architecture.
 
 
 ## Ref

@@ -4,7 +4,7 @@ What is a *Good* software engineering team? How would you measure that?
 
 *Notes from DevOps and Lean Software research.*
 
-A good team will build quality products (services, platforms, etc) that solve real problems; and in order to be successful a good team will require a Generative Culture, an inspiring vision, and the responsibility of fast and frequent deployments.
+A good team will build quality products (services, platforms, etc) that solve real problems; and in order to be successful, a good team will require an inspiring vision, a Generative Culture, and the responsibility of fast / frequent deployments.
 
 ## The Vision
 

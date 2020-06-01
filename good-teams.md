@@ -4,16 +4,17 @@ What is a *Good* software engineering team? How would you measure that?
 
 *Notes from DevOps and Lean Software research.*
 
-## The Goal
+A good team will build quality products (services, platforms, etc) that solve real problems; and in order to be successful a good team will require a Generative Culture, an inspiring vision, and the responsibility of fast and frequent deployments.
 
-A successful organization must have an inspiring goal, a shared vision that unites different teams and technologies. Without an inspiring (and shared) goal, an organization will inevitably fall into a default Bureaucratic Culture (a rule-oriented culture). In that environment software developers will adopt what is known as a *mercenary mindset*. What's worse, due to [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law), these mercenary-minded developers will create output (products, services, platforms, etc) that reflect the bureaucratic communication channels between teams within the organization -- and will NOT meet the goals of the users.
+## The Vision
 
-A good team will build quality products (services, platforms, etc) that solve real problems; and in order to be successful a team will require a Generative Culture, an inspiring vision, and the responsibility of fast and frequent deployments.
+A successful organization must have an inspiring vision; and it must be shared so as to unite the different teams and technologies within the organization. Without an inspiring (and shared) vision, an organization will inevitably fall into a default Bureaucratic Culture (a rule-oriented culture). In that environment software developers will adopt what is known as a *mercenary mindset*. What's worse, due to [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law), these mercenary-minded developers will create technical output (products, services, platforms, etc) that reflect the bureaucratic communication channels between teams within the organization -- and they will NOT solve the problems of the users.
 
+## The Measures
 
-## Measures
+How would one measure a good team? Or more importantly, what can we easily measure that is a strong predictor for a high-performing software development team? 
 
-What to measure? Or more usefully, what can we easily measure that is a strong predictor for a high-performing software development team? It turns out, the following cluster of easy-to-measure metrics forms the best predictor of a high-performing team in a Generative Culture (a performance-oriented culture).
+It turns out, the following cluster of easy-to-measure metrics forms the best predictor of a high-performing team in a Generative Culture (a performance-oriented culture).
 
 ### Positive Measures
 
@@ -22,7 +23,7 @@ What to measure? Or more usefully, what can we easily measure that is a strong p
 + Mean-Time-To-Repair (MTTR)
 + *Change Failure Rate*
 
-More usefully, the first three (as a cluster) predict the *fourth measure*. In other words, the most stable systems (with the lowest failure rates) are the systems that have fast and most frequent deployments in a fully-automated CI/CD pipeline. A fully automated CI/CD pipeline is an essential and necesary piece of building quality software, but as we'll see, there's much more to consider.
+More usefully, the first three (as a cluster) predict the *fourth measure*. In other words, the most stable systems (with the lowest failure rates) are the systems that have fast and frequent deployments in a fully-automated CI/CD pipeline. A fully automated CI/CD pipeline is an essential and necesary part of building quality software, but as we'll see, there's much more to consider.
 
 ### Negavitve Measures
 
@@ -48,22 +49,11 @@ This isn't to say that the above items are themselves meaningless, far from it, 
 And while the size of an organization will not predict software quality, it is true that high-performing teams tend to scale much easier (scaling an organization requires a loosely coupled architecture more than anything else).
 
 
-## Culture Matters
+## The Culture
 
-Westrum Model of Organizational Culture
+There are three categories of culture that one will find within software engineering organizations. Of these three, the Generative Culture (performance-oriented) is the one most likely produce quality software.
 
-### Power-oriented
-
-Also known as *Pathological Culture*, a Power-oriented Culture values individual goals over organizational goals, where the loudest and most powerful voice in the room gets their way. Communication does not flow easily, and problems are typically suppressed.
-
-Software created in a Power-oriented Culture will tend to be a Tightly Coupled architecture (due to [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law)) and will reflect the particular whims of whoever has the most powerful voice (typically whoever is at the top of the hierarchy).
-
-
-### Rule-oriented
-
-Also known as *Bureaucratic Culture*, a Rule-oriented Culture values departmental goals over organizational goals, and is the default culture for most large organizations. While often friendly, information flow is stymied by bureaucratic approvals, and problems are typically ignored. Often times the emphasis is on being nice and well-liked, rather than building quality software (and making users happy).
-
-Software created in a Rule-oriented Culture will tend to have a Tightly Coupled architecture (due to [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law)) and will reflect the particular bureaucratic communication channels between teams. There is likely a Change Approval Board, with deployments that are slower (measured in hours) and less-frequent (weekly or more) than what a fully automated CI/CD pipeline could otherwise provide.
+For more information see [Westrum Model of Organizational Culture](https://qualitysafety.bmj.com/content/13/suppl_2/ii22)
 
 
 ### Performance-oriented
@@ -73,25 +63,40 @@ Also known as *Generative Culture*, a Performance-oriented Culture values the mi
 Software created in a Performance-oriented Culture will tend to have a Loosely Coupled architecture (due to [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law)), with deployments that are fast (minutes) and frequent (on-demand, several times per-day), taking full advantage of a fully automated CI/CD pipeline.
 
 
+### Rule-oriented
+
+Also known as *Bureaucratic Culture*, a Rule-oriented Culture values departmental goals over organizational goals. This is the most common culture in software engineering organizations, and it is the default culture for most large organizations. While often friendly, information flow is stymied by bureaucratic approvals, and problems are typically ignored. Often times the emphasis is on being nice and well-liked, rather than building quality software (and making users happy).
+
+Software created in a Rule-oriented Culture will tend to have a Tightly Coupled architecture (due to [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law)) and will reflect the particular bureaucratic communication channels between teams. There is likely a Change Approval Board, with deployments that are slower (measured in hours) and less-frequent (weekly or more) than what a fully automated CI/CD pipeline could otherwise provide.
+
+
+### Power-oriented
+
+Also known as *Pathological Culture*, a Power-oriented Culture values individual goals over organizational goals, where the loudest and most powerful voice in the room gets their way. Communication does not flow easily, and problems are typically suppressed.
+
+Software created in a Power-oriented Culture will tend to have a Tightly Coupled architecture (due to [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law)) and will reflect the particular whims of whoever has the most powerful voice (typically whoever is at the top of the hierarchy).
+
+
 ## Changing the Culture
 
-See Conway's Law
+The best way to change a culture is through an Inverse Conway Maneuver. Organize the teams and their communication channels to match the desired architecture. This will require cross-functional teams that adhere to Lean management, as well as a culture of Learning and Experimentation.
 
-*"Organisations often produce web sites with a content and structure which mirrors the internal concerns of the organisation rather than the needs of the users of the site."*
+Conway's Law:
 
-See Inverse Conway Maneuver
+*"Any organization that designs a system (defined broadly) will produce a design whose structure is a copy of the organization's communication structure."*
+
+Inverse Conway Maneuver:
 
 *"Make sure the organization is compatible with the product architecture."*
 
-The best way to change the culture is through an Inverse Conway Maneuver. Organize the teams and their communication channels to match the desired architecture. This will require cross-functional teams that adhere to Lean management, as well as a culture of Learning and Experimentation.
 
 ### Learning and Experimentation
 
 Continuous learning
 
-Team must be free to choose their tools, and change those tools as requirements are better understood.
+Team must be free to choose their tools, and change those tools as they the customer's problems are better understood.
 
-Tool makers can not force the use of their tool.
+Tool makers can not force the use of their tool!
 
 Tools must make the developer's life easier. Just as a high-performing team focuses on solving the problems of their users, tool makers must treat other developers as their users and solve their problems (with attention to usability, accessibility, and customer satisfaction).
 

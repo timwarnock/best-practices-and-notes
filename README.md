@@ -14,7 +14,7 @@ pip install -r requirements.txt
 Building/compiling the site
 
 ```bash
-mkdocs build
+mkdocs build --clean
 ```
 
 

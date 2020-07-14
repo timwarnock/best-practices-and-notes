@@ -16,13 +16,15 @@ theme:
     favicon: images/favicon.png
 
 nav:
-    - Tips:
+    - Best Practices:
         - Conventional Commits: conventional-commits.md
-        - Some other nonsense: foo.md
-    - Controverial:
+        - Good Architecture: good-architecture.md
+        - Good Code: good-code.md
+        - Good Teams: good-teams.md
+    - Opinions:
         - End of Agile: agile.md
 
 markdown_extensions:
-#  - admonition
+  - admonition
   - toc:
       permalink: True

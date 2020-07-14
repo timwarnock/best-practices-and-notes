@@ -1,7 +1,7 @@
 # -*- mode: yaml -*-
 # vim: set filetype=yaml tabstop=4 shiftwidth=4 autoindent smartindent:
 site_name: "Tim's Best Practices and Notes"
-site_url: https://github.com/pages/timwarnock/best-practices-and-notes/
+site_url: https://timwarnock.github.io/best-practices-and-notes/
 site_description: Best Practices and Notes that I found useful
 site_author: Timothy Warnock
 
@@ -11,6 +11,8 @@ edit_uri: ""
 
 theme:
     name: material
+    palette:
+        primary: black
     custom_dir: mkdocs-overrides
     logo: images/logo.png
     favicon: images/favicon.png

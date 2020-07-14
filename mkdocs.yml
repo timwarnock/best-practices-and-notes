@@ -1,0 +1,28 @@
+# -*- mode: yaml -*-
+# vim: set filetype=yaml tabstop=4 shiftwidth=4 autoindent smartindent:
+site_name: "Tim's Best Practices and Notes"
+site_url: https://github.cloud.capitalone.com/pages/timwarnock/best-practices-and-notes/
+site_description: Best Practices and Notes that I found useful
+site_author: Timothy Warnock
+
+repo_url: https://github.cloud.capitalone.com/timwarnock/best-practices-and-notes
+repo_name: timwarnock/best-practices-and-notes
+edit_uri: ""
+
+theme:
+    name: material
+    custom_dir: mkdocs-overrides
+    logo: images/logo.png
+    favicon: images/favicon.png
+
+nav:
+    - Tips:
+        - Conventional Commits: conventional-commits.md
+        - Some other nonsense: foo.md
+    - Controverial:
+        - End of Agile: agile.md
+
+markdown_extensions:
+#  - admonition
+  - toc:
+      permalink: True

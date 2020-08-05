@@ -55,8 +55,8 @@ There are three categories of culture that one will find within software enginee
 
 For more information see [Westrum Model of Organizational Culture](https://qualitysafety.bmj.com/content/13/suppl_2/ii22)
 
-| Power-oriented                | Rule-oriented             | Performance-oriented     |
-| --------------                | -------------             | --------------------     |
+| **Power-oriented**            | **Rule-oriented**         | **Performance-oriented** |
+| ------------------            | -----------------         | ------------------------ |
 | Low cooperation               | Modest cooperation	      | High cooperation         | 
 | Messengers "shot"             |	Messengers neglected      | Messengers trained       |
 | Responsibilities shirked      | Narrow responsibilities   | Risks are shared         |

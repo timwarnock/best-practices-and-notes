@@ -1,6 +1,6 @@
 # -*- mode: yaml -*-
 # vim: set filetype=yaml tabstop=4 shiftwidth=4 autoindent smartindent:
-site_name: "Tim's Best Practices and Notes"
+site_name: "Tim Warnock's Notes"
 site_url: https://timwarnock.github.io/best-practices-and-notes/
 site_description: Best Practices and Notes that I found useful
 site_author: Timothy Warnock
@@ -12,7 +12,7 @@ edit_uri: ""
 theme:
     name: material
     palette:
-        primary: black
+        primary: #669
     custom_dir: mkdocs-overrides
     logo: images/logo.png
     favicon: images/favicon.png
@@ -23,8 +23,10 @@ nav:
         - Good Architecture: good-architecture.md
         - Good Code: good-code.md
         - Good Teams: good-teams.md
+        - Pair Programming: pair-programming.md
     - Opinions:
         - End of Agile: agile.md
+        - End of OOP: oops.md
 
 markdown_extensions:
   - admonition

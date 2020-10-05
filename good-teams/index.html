@@ -1,0 +1,768 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Best Practices and Notes that I found useful">
+      
+      
+        <link rel="canonical" href="https://timwarnock.github.io/best-practices-and-notes/good-teams/">
+      
+      
+        <meta name="author" content="Timothy Warnock">
+      
+      <link rel="shortcut icon" href="../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.4.0">
+    
+    
+      
+        <title>Good Teams - Tim Warnock's Notes</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.fe0cca5b.min.css">
+      
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#good-teams" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://timwarnock.github.io/best-practices-and-notes/" title="Tim Warnock's Notes" class="md-header-nav__button md-logo" aria-label="Tim Warnock's Notes">
+      
+  <img src="../images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Tim Warnock's Notes
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Good Teams
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/timwarnock/best-practices-and-notes" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    timwarnock/best-practices-and-notes
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://timwarnock.github.io/best-practices-and-notes/" title="Tim Warnock's Notes" class="md-nav__button md-logo" aria-label="Tim Warnock's Notes">
+      
+  <img src="../images/logo.png" alt="logo">
+
+    </a>
+    Tim Warnock's Notes
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/timwarnock/best-practices-and-notes" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    timwarnock/best-practices-and-notes
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1" checked>
+    
+    <label class="md-nav__link" for="nav-1">
+      Best Practices
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Best Practices" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Best Practices
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../conventional-commits/" title="Conventional Commits" class="md-nav__link">
+      Conventional Commits
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../good-architecture/" title="Good Architecture" class="md-nav__link">
+      Good Architecture
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../good-code/" title="Good Code" class="md-nav__link">
+      Good Code
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Good Teams
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Good Teams" class="md-nav__link md-nav__link--active">
+      Good Teams
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-vision" class="md-nav__link">
+    The Vision
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-measures" class="md-nav__link">
+    The Measures
+  </a>
+  
+    <nav class="md-nav" aria-label="The Measures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#positive-measures" class="md-nav__link">
+    Positive Measures
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#negavitve-measures" class="md-nav__link">
+    Negavitve Measures
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#meaningless-measures" class="md-nav__link">
+    Meaningless Measures
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-culture" class="md-nav__link">
+    The Culture
+  </a>
+  
+    <nav class="md-nav" aria-label="The Culture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#power-oriented" class="md-nav__link">
+    Power-oriented
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rule-oriented" class="md-nav__link">
+    Rule-oriented
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#performance-oriented" class="md-nav__link">
+    Performance-oriented
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changing-the-culture" class="md-nav__link">
+    Changing the Culture
+  </a>
+  
+    <nav class="md-nav" aria-label="Changing the Culture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#learning-and-experimentation" class="md-nav__link">
+    Learning and Experimentation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lean-management" class="md-nav__link">
+    Lean Management
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#refs" class="md-nav__link">
+    Refs
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pair-programming/" title="Pair Programming" class="md-nav__link">
+      Pair Programming
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Opinions
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Opinions" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Opinions
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../agile/" title="End of Agile" class="md-nav__link">
+      End of Agile
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../oops/" title="End of OOP" class="md-nav__link">
+      End of OOP
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-vision" class="md-nav__link">
+    The Vision
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-measures" class="md-nav__link">
+    The Measures
+  </a>
+  
+    <nav class="md-nav" aria-label="The Measures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#positive-measures" class="md-nav__link">
+    Positive Measures
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#negavitve-measures" class="md-nav__link">
+    Negavitve Measures
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#meaningless-measures" class="md-nav__link">
+    Meaningless Measures
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-culture" class="md-nav__link">
+    The Culture
+  </a>
+  
+    <nav class="md-nav" aria-label="The Culture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#power-oriented" class="md-nav__link">
+    Power-oriented
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rule-oriented" class="md-nav__link">
+    Rule-oriented
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#performance-oriented" class="md-nav__link">
+    Performance-oriented
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changing-the-culture" class="md-nav__link">
+    Changing the Culture
+  </a>
+  
+    <nav class="md-nav" aria-label="Changing the Culture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#learning-and-experimentation" class="md-nav__link">
+    Learning and Experimentation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lean-management" class="md-nav__link">
+    Lean Management
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#refs" class="md-nav__link">
+    Refs
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                <h1 id="good-teams">Good Teams<a class="headerlink" href="#good-teams" title="Permanent link">&para;</a></h1>
+<p>What is a <em>Good</em> software engineering team? How would you measure that? </p>
+<p><em>Notes from DevOps and Lean Software research.</em></p>
+<p>A good team will build quality products (services, platforms, etc) that solve real problems; and in order to be successful, a good team will require an inspiring vision, a Generative Culture, and the responsibility of fast / frequent deployments.</p>
+<h2 id="the-vision">The Vision<a class="headerlink" href="#the-vision" title="Permanent link">&para;</a></h2>
+<p>A successful organization must have an inspiring vision; and it must be shared so as to unite the different teams and technologies within the organization. Without an inspiring (and shared) vision, an organization will inevitably fall into a default Bureaucratic Culture (a rule-oriented culture). In that environment software developers will adopt what is known as a <em>mercenary mindset</em>. What's worse, due to <a href="https://en.wikipedia.org/wiki/Conway%27s_law">Conway's Law</a>, these mercenary-minded developers will create technical output (products, services, platforms, etc) that reflect the bureaucratic communication channels between teams within the organization -- and they will NOT solve the problems of the users.</p>
+<h2 id="the-measures">The Measures<a class="headerlink" href="#the-measures" title="Permanent link">&para;</a></h2>
+<p>How would one measure a good team? Or more importantly, what can we easily measure that is a strong predictor for a high-performing software development team? </p>
+<p>It turns out, the following cluster of easy-to-measure metrics forms the best predictor of a high-performing team in a Generative Culture (a performance-oriented culture).</p>
+<h3 id="positive-measures">Positive Measures<a class="headerlink" href="#positive-measures" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Deployment Frequency -- <em>how often do you deploy to production?</em></li>
+<li>Lead-Time -- <em>from code-commit to production</em></li>
+<li>Mean-Time-To-Repair (MTTR)</li>
+<li><em>Change Failure Rate</em></li>
+</ul>
+<p>More usefully, the first three (as a cluster) predict the <em>fourth measure</em>. In other words, the most stable systems (with the lowest failure rates) are the systems that have fast and frequent deployments in a fully-automated CI/CD pipeline. A fully automated CI/CD pipeline is an essential and necesary part of building quality software, but as we'll see, there's much more to consider.</p>
+<h3 id="negavitve-measures">Negavitve Measures<a class="headerlink" href="#negavitve-measures" title="Permanent link">&para;</a></h3>
+<p>In other words, what <strong>NOT TO DO</strong>? This may defy conventional wisdom, but the following are negative-predictors towards quality software. In other words, they are not only highly correlated with bad software, the mere existence of the following will predict a higher failure rate, as well as increased security risks.</p>
+<ul>
+<li>Change Approval Board</li>
+<li>Velocity -- <em>in the Agile/Scrum context</em></li>
+<li>Utilization -- <em>"as utilization approaches 100%, Lead-Time approaches infinity"</em></li>
+</ul>
+<h3 id="meaningless-measures">Meaningless Measures<a class="headerlink" href="#meaningless-measures" title="Permanent link">&para;</a></h3>
+<p>Surprisingly, the following common measures provide no correlation whatsover between high-performing teams and low-performing teams. These are not negatively correlated (and thus may still be important factors within your organization); but they simply do not correlate to the overall quality and stability of your software, and should not be used as comparative measures.</p>
+<ul>
+<li>Age of technology (mainframe vs distributed microservices)</li>
+<li>Size of the organization</li>
+<li>Whether Ops team or Dev team performs deployments</li>
+<li>Unit-test coverage</li>
+<li>Lines of code</li>
+</ul>
+<p>This isn't to say that the above items are themselves meaningless, far from it, but it's important to understand that these measures will not predict the quality and stability of your software. For example, there are teams ingrating with ancient mainframes (and no unit-tests) that are outperforming teams with a microservice architecture and 100% unit-test coverage.</p>
+<p>And while the size of an organization will not predict software quality, it is true that high-performing teams tend to scale much easier (scaling an organization requires a loosely coupled architecture more than anything else).</p>
+<h2 id="the-culture">The Culture<a class="headerlink" href="#the-culture" title="Permanent link">&para;</a></h2>
+<p>There are three categories of culture that one will find within software engineering organizations. Of these three, the Generative Culture (performance-oriented) is the one most likely produce quality software.</p>
+<p>For more information see <a href="https://qualitysafety.bmj.com/content/13/suppl_2/ii22">Westrum Model of Organizational Culture</a></p>
+<table>
+<thead>
+<tr>
+<th><strong>Power-oriented</strong></th>
+<th><strong>Rule-oriented</strong></th>
+<th><strong>Performance-oriented</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Low cooperation</td>
+<td>Modest cooperation</td>
+<td>High cooperation</td>
+</tr>
+<tr>
+<td>Messengers "shot"</td>
+<td>Messengers neglected</td>
+<td>Messengers trained</td>
+</tr>
+<tr>
+<td>Responsibilities shirked</td>
+<td>Narrow responsibilities</td>
+<td>Risks are shared</td>
+</tr>
+<tr>
+<td>Bridging discouraged</td>
+<td>Bridging tolerated</td>
+<td>Bridging encouraged</td>
+</tr>
+<tr>
+<td>Failure leads to scapegoating</td>
+<td>Failure leads to justice</td>
+<td>Failure leads to inquiry</td>
+</tr>
+<tr>
+<td>Novelty crushed</td>
+<td>Novelty leads to problems</td>
+<td>Novelty implemented</td>
+</tr>
+</tbody>
+</table>
+<h3 id="power-oriented">Power-oriented<a class="headerlink" href="#power-oriented" title="Permanent link">&para;</a></h3>
+<p>Also known as <em>Pathological Culture</em>, a Power-oriented Culture values individual goals over organizational goals, where the loudest and most powerful voice in the room gets their way. Communication does not flow easily, and problems are typically suppressed.</p>
+<p>Software created in a Power-oriented Culture will tend to have a Tightly Coupled architecture (due to <a href="https://en.wikipedia.org/wiki/Conway%27s_law">Conway's Law</a>) and will reflect the particular whims of whoever has the most powerful voice (typically whoever is at the top of the hierarchy).</p>
+<h3 id="rule-oriented">Rule-oriented<a class="headerlink" href="#rule-oriented" title="Permanent link">&para;</a></h3>
+<p>Also known as <em>Bureaucratic Culture</em>, a Rule-oriented Culture values departmental goals over organizational goals. This is the most common culture in software engineering organizations, and it is the default culture for most large organizations. While often friendly, information flow is stymied by bureaucratic approvals, and problems are typically ignored. Often times the emphasis is on being nice and well-liked, rather than building quality software (and making users happy).</p>
+<p>Software created in a Rule-oriented Culture will tend to have a Tightly Coupled architecture (due to <a href="https://en.wikipedia.org/wiki/Conway%27s_law">Conway's Law</a>) and will reflect the particular bureaucratic communication channels between teams. There is likely a Change Approval Board, with deployments that are slower (measured in hours) and less-frequent (weekly or more) than what a fully automated CI/CD pipeline could otherwise provide.</p>
+<h3 id="performance-oriented">Performance-oriented<a class="headerlink" href="#performance-oriented" title="Permanent link">&para;</a></h3>
+<p>Also known as <em>Generative Culture</em>, a Performance-oriented Culture values the mission of the organization over all else. It is in this environment where developers adopt a missionary mindset (rather than the more common mercenary mindset). Information flows easily, problems and failures are discussed openly (in fact, those discussions are encouraged).</p>
+<p>Software created in a Performance-oriented Culture will tend to have a Loosely Coupled architecture (due to <a href="https://en.wikipedia.org/wiki/Conway%27s_law">Conway's Law</a>), with deployments that are fast (minutes) and frequent (on-demand, several times per-day), taking full advantage of a fully automated CI/CD pipeline.</p>
+<h2 id="changing-the-culture">Changing the Culture<a class="headerlink" href="#changing-the-culture" title="Permanent link">&para;</a></h2>
+<p>The best way to change a culture is through an Inverse Conway Maneuver. Organize the teams and their communication channels to match the desired architecture. This will require cross-functional teams that adhere to Lean management, as well as a culture of Learning and Experimentation.</p>
+<p>Conway's Law:</p>
+<p><em>"Any organization that designs a system (defined broadly) will produce a design whose structure is a copy of the organization's communication structure."</em></p>
+<p>Inverse Conway Maneuver:</p>
+<p><em>"Make sure the organization is compatible with the product architecture."</em></p>
+<h3 id="learning-and-experimentation">Learning and Experimentation<a class="headerlink" href="#learning-and-experimentation" title="Permanent link">&para;</a></h3>
+<p>Continuous learning</p>
+<p>Team must be free to choose their tools, and change those tools as their customer's problems are better understood.</p>
+<p>Tool makers can not force the use of their tool!</p>
+<p>Tools must make the developer's life easier. Just as a high-performing team focuses on solving the problems of their users, tool makers must treat other developers as their users and solve their problems (with attention to usability, accessibility, and customer satisfaction).</p>
+<h3 id="lean-management">Lean Management<a class="headerlink" href="#lean-management" title="Permanent link">&para;</a></h3>
+<p><em>Adopt, Adapt, Adept</em></p>
+<ul>
+<li>Lightweight Change Management</li>
+<li>Limited WIP</li>
+<li>Visual Feedback (of production usage)</li>
+</ul>
+<p>Compare this to a bureaucratic Change Approval Board, which in practice results in Risk Management Theater, or InfoSec Theater, rather than actual risk-managements and security.</p>
+<p>The best visual feedback will tie small incremental changes to measures of customer satisfaction. For example, this could include user-engagement metrics, as well as feedback from advanced A/B testing (such as multi-armed-bandit algorithms).</p>
+<h2 id="refs">Refs<a class="headerlink" href="#refs" title="Permanent link">&para;</a></h2>
+<ul>
+<li>https://www.youtube.com/watch?v=RJz1GlClG1M</li>
+<li>https://itrevolution.com/book/accelerate/</li>
+<li>
+<p><a href="https://qualitysafety.bmj.com/content/13/suppl_2/ii22">Westrum Model</a></p>
+</li>
+<li>
+<p><a href="https://www.thoughtworks.com/radar/techniques/inverse-conway-maneuver">Inverse Conway Maneuver</a></p>
+</li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.d710d30a.min.js"></script>
+      <script src="../assets/javascripts/bundle.b39636ac.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.a68abb33.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

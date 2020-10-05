@@ -1,0 +1,528 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Best Practices and Notes that I found useful">
+      
+      
+        <link rel="canonical" href="https://timwarnock.github.io/best-practices-and-notes/oops/">
+      
+      
+        <meta name="author" content="Timothy Warnock">
+      
+      <link rel="shortcut icon" href="../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.4.0">
+    
+    
+      
+        <title>End of OOP - Tim Warnock's Notes</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.fe0cca5b.min.css">
+      
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#end-of-oop" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://timwarnock.github.io/best-practices-and-notes/" title="Tim Warnock's Notes" class="md-header-nav__button md-logo" aria-label="Tim Warnock's Notes">
+      
+  <img src="../images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Tim Warnock's Notes
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              End of OOP
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/timwarnock/best-practices-and-notes" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    timwarnock/best-practices-and-notes
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://timwarnock.github.io/best-practices-and-notes/" title="Tim Warnock's Notes" class="md-nav__button md-logo" aria-label="Tim Warnock's Notes">
+      
+  <img src="../images/logo.png" alt="logo">
+
+    </a>
+    Tim Warnock's Notes
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/timwarnock/best-practices-and-notes" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    timwarnock/best-practices-and-notes
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
+    
+    <label class="md-nav__link" for="nav-1">
+      Best Practices
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Best Practices" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Best Practices
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../conventional-commits/" title="Conventional Commits" class="md-nav__link">
+      Conventional Commits
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../good-architecture/" title="Good Architecture" class="md-nav__link">
+      Good Architecture
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../good-code/" title="Good Code" class="md-nav__link">
+      Good Code
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../good-teams/" title="Good Teams" class="md-nav__link">
+      Good Teams
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pair-programming/" title="Pair Programming" class="md-nav__link">
+      Pair Programming
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Opinions
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Opinions" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Opinions
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../agile/" title="End of Agile" class="md-nav__link">
+      End of Agile
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="End of OOP" class="md-nav__link md-nav__link--active">
+      End of OOP
+    </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                <h1 id="end-of-oop">End of OOP<a class="headerlink" href="#end-of-oop" title="Permanent link">&para;</a></h1>
+<p>I would like to know when it is best to use object-oriented programming, and when it is best to use procedural programming.</p>
+<blockquote>
+<p>tl;dr: neither, go with functional programming</p>
+</blockquote>
+<p>By procedural programming, I mean the kind of code you'd find <a href="https://amzn.to/2Tyxozv">programming in C</a>; imperative control flow, functions, data structures, and algorithms. For example,</p>
+<pre><code class="c">#include &lt;stdio.h&gt;
+
+float f_to_c(float f) {
+    return (f - 32) * 5 / 9;
+}
+
+int main() {
+    float fahrenheit;
+    printf(&quot;Please enter the temperature in Fahrenheit: &quot;);
+    scanf(&quot;%f&quot;, &amp;fahrenheit);
+    printf(&quot;Temperature in Celsius = %.2f\n&quot;, f_to_c(fahrenheit));
+    return 0;
+}
+</code></pre>
+
+<p>And by object-oriented programming, I mean the kind of code with abstraction, inheritance, polymorphism, and encapsulation. For example,</p>
+<pre><code class="java">import java.util.*;
+
+interface TemperatureConverter {
+    public float convert();
+}
+
+class Temperature {
+    float degrees;
+    Temperature(float t) {
+        degrees = t;
+    }
+}
+
+class Fahrenheit extends Temperature implements TemperatureConverter {
+
+    Fahrenheit(float t) {
+        super(t);
+    }
+
+    public float convert() {
+        return ((degrees - 32)*5)/9;
+    }
+
+}
+
+class FahrenheitToCelsius {
+
+    public static void main(String[] args) {
+        Fahrenheit fahrenheit;
+        Scanner in = new Scanner(System.in);
+        System.out.print(&quot;Enter temperature in Fahrenheit: &quot;);
+        fahrenheit = new Fahrenheit( in.nextFloat() );
+
+        System.out.println(&quot;temperature in Celsius = &quot; 
+            + fahrenheit.convert());
+    }
+
+}
+</code></pre>
+
+<p>I admittedly forced some inheritance and polymorphism into the above code, but it's arguably just as easy (if not easier) to read than the C example (despite being considerably longer).</p>
+<p>In both cases we hid the implementation details (the specific formula that converts Fahrenheit to Celsius) from the main(). However, the OOP example also hides (encapsulates) the data structure as well. In the Java example we encapsulate the float within the Temperature base class, which the Fahrenheit class inherits. And since the Fahrenheit class implements the TemperatureConverter interface, then we're guaranteed to have a convert() method. There is still some implicit typecasting (a float to string within the println), but the idea is that the main() function doesn't care about the underlying data structure.</p>
+<p>As <a href="https://amzn.to/33s8Qwi">Robert Martin (Uncle Bob)</a> put it, "Objects expose behavior and hide data." The Fahrenheit class exposed a convert() behavior and hid the underlying data structure. This, according to Uncle Bob, makes it easy to add new objects without changing existing behaviors. For example,</p>
+<pre><code class="java">class Celsius extends Temperature implements TemperatureConverter {
+
+    Celsius(float t) {
+        super(t);
+    }
+
+    public float convert() {
+        return 9*degrees/5 + 32;
+    }
+
+}
+</code></pre>
+
+<p>This code has no impact on the existing Fahrenheit class, and we can safely call convert() on both Fahrenheit and Celsius objects. Additionally, if we use generics on the Temperature class, then we could allow for different data structures (such as double or BigDecimal) on something like a Kelvin class. In OOP, adding new classes is generally easy.</p>
+<p>That said, what if we wanted to add new behavior? Maybe we want to add an isRoomTemperature() method. If so, we could add a new interface and then implement it in Celsius and Fahrenheit, but what if we had also implemented that new Kelvin class? Or several other Temperature classes? And shouldn't the convert() method return a Temperature class? This could get messy and will lead us into <a href="https://en.wikipedia.org/wiki/Don't_repeat_yourself">DRY</a> problems. In fact, this is an area where OOP is not ideal. Even Uncle Bob admits that if we're adding new behaviors then <code>"we prefer data types and procedures."</code></p>
+<p><strong>If we're adding new behavior then we prefer procedural code.</strong></p>
+<p>This seemingly obvious and innocuous statement in <a href="https://amzn.to/33s8Qwi">Clean Code</a> is actually very profound, especially considering the fact that OOP and classic procedural programming do not mix well in a single code-base. Whether you go with OOP or not, if Uncle Bob is correct, depends on whether or not you will be adding and managing lots of behavior, or whether you will be adding and managing lots of data types. If the behavior will be relatively unchanged, then OOP would be beneficial, but if we're planning to add or change behavior, then procedural programming would be preferred. I honestly don't know what kind of software projects aren't primarily adding new behaviors (new features).</p>
+<p>For reference, adding a room temperature check is easy in the C code,</p>
+<pre><code class="c">#include &lt;stdio.h&gt;
+#include &lt;stdbool.h&gt;
+
+bool is_c_room_temperature(float c) {
+    return c &gt;= 20 &amp;&amp; c &lt;= 25 ? 1 : 0;
+}
+
+float f_to_c(float f) {
+    return (f - 32) * 5 / 9;
+}
+
+bool is_f_room_temperature(float f) {
+    return is_c_room_temperature(f_to_c(f));
+}
+
+int main() {
+    float fahrenheit;
+    printf(&quot;Please enter the temperature in Fahrenheit: &quot;);
+    scanf(&quot;%f&quot;, &amp;fahrenheit);
+    printf(&quot;Temperature in Celsius = %.2f\n&quot;, f_to_c(fahrenheit));
+    if (is_f_room_temperature(fahrenheit)) {
+        printf(&quot;%.2f is room temperature\n&quot;, fahrenheit);
+    }
+    return 0;
+}
+</code></pre>
+
+<p>Classic procedural code does not concern itself with adding behaviors to objects. Instead, it treats data types as data types and isolates the "procedural" behaviors into functions that are performed on those data types. If we stick to pure functions (no side effects, and all inputs map to unique outputs), then we'll have highly testable code that can run in highly-concurrent environments.</p>
+<p>For example, adding a Kelvin conversion would look like this,</p>
+<pre><code class="c">float c_to_k(float c) {
+    return c + 273.15;
+}
+</code></pre>
+
+<p>Likewise, adding a Fahrenheit to Kelvin conversion would simply chain together two pure functions,</p>
+<pre><code class="c">float f_to_k(float f) {
+    return c_to_k(f_to_c(f));
+}
+</code></pre>
+
+<p>Procedural code focuses entirely on behavior. Adding this functionality in a pure OOP style would result a laundry list of classes, interfaces, and methods. It can get out of hand quickly, and we'd soon be researching design patterns to try to regain some sense of code quality.</p>
+<p>In practice, most developers tend to treat OOP and procedural programming with a sort of religious devotion, zealously adhering to their preferred programming style and feeling that the alternative is sacrilege. I think Uncle Bob was onto something when he said that <code>"good software developers understand these issues without prejudice and choose the approach that is best for the job at hand."</code> That's also from <a href="https://amzn.to/33s8Qwi">Clean Code</a>, a book that should be read at least as often as it's referenced (it's a bit like George Orwell's 1984, most people reference it without ever having read it).</p>
+<p>Uncle Bob is certainly more diplomatic than Joe Armstrong, the creator of Erlang, who had famously said,</p>
+<blockquote>
+<p>"The problem with object-oriented languages is they’ve got all this implicit environment that they carry around with them. You wanted a banana but what you got was a gorilla holding the banana and the entire jungle."</p>
+</blockquote>
+<p>To date, I've never heard a reasonable counter-argument to this objection to OOP, namely, that objects bind data structures and functions together (which inevitably leads to an explosion of side-effects). Even as you try to decouple the banana from the gorilla, you end up creating even more classes, more side effects, and most likely an even <a href="https://docs.spring.io/spring-framework/docs/2.5.x/api/org/springframework/aop/framework/AbstractSingletonProxyFactoryBean.html">worse problem</a>. I'm not sure I'd go so far as to say <a href="http://harmful.cat-v.org/software/OO_programming/why_oo_sucks">OO Sucks</a>, or that it's been an unmitigated disaster for software engineering, but I am hard pressed to defend OOP in light of <a href="https://medium.com/better-programming/object-oriented-programming-the-trillion-dollar-disaster-92a4b666c7c7">decades of hard learned lessons</a>.</p>
+<p>Obviously, good code is preferable to bad code in any language. There is plenty of bad procedural code out in the world. But honestly, in OOP you often find good programmers writing bad code. Let's go back to some of the <a href="https://amzn.to/2Z2x7cW">earliest lessons</a> in software engineering, specifically, Fred Brook's essay, <a href="https://amzn.to/2Z2x7cW">No Silver Bullet</a>, and ask ourselves how much accidental complexity has been created by OOP? How much code in an average OOP project is tackling the essential complexity of a problem versus the accidental complexity?</p>
+<p>In fairness, OOP was popularized by Java, which solved many problems from the early days of C and C++ (such as garbage collection and platform independence). In the decades since, Java has added capabilities found in modern languages (such as lambda expressions, collections, stream api, higher-order functions, etc). Most of the new capabilities come from the world of functional programming, and exactly zero of these capabilities come from OOP.</p>
+<p>Whether we like it or not, the future may not be kind to OOP. Multi-core architectures and distributed computing are pushing software into high-concurrency asynchronous environments. Even worse, the push to cloud computing and microservices leads us to an increase in latency within a highly concurrent asynchronous world. This is an ideal environment for a separation of data structures from functions (pure functions). This is a great environment for Haskell and Erlang (or coding pure functions using Scala, Python, or Go), but regardless of the language, you couldn't ask for a worse environment for OOP.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.d710d30a.min.js"></script>
+      <script src="../assets/javascripts/bundle.b39636ac.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.a68abb33.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

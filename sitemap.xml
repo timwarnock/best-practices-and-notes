@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
+     <loc>https://timwarnock.github.io/best-practices-and-notes/conventional-commits/</loc>
+     <lastmod>2020-10-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://timwarnock.github.io/best-practices-and-notes/good-architecture/</loc>
+     <lastmod>2020-10-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://timwarnock.github.io/best-practices-and-notes/good-code/</loc>
+     <lastmod>2020-10-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://timwarnock.github.io/best-practices-and-notes/good-teams/</loc>
+     <lastmod>2020-10-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://timwarnock.github.io/best-practices-and-notes/pair-programming/</loc>
+     <lastmod>2020-10-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://timwarnock.github.io/best-practices-and-notes/agile/</loc>
+     <lastmod>2020-10-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://timwarnock.github.io/best-practices-and-notes/oops/</loc>
+     <lastmod>2020-10-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+</urlset>

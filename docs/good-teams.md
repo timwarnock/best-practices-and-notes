@@ -55,12 +55,21 @@ There are three categories of culture that one will find within software enginee
 
 For more information see [Westrum Model of Organizational Culture](https://qualitysafety.bmj.com/content/13/suppl_2/ii22)
 
+| **Power-oriented**            | **Rule-oriented**         | **Performance-oriented** |
+| ------------------            | -----------------         | ------------------------ |
+| Low cooperation               | Modest cooperation	      | High cooperation         | 
+| Messengers "shot"             |	Messengers neglected      | Messengers trained       |
+| Responsibilities shirked      | Narrow responsibilities   | Risks are shared         |
+| Bridging discouraged          | Bridging tolerated        | Bridging encouraged      |
+| Failure leads to scapegoating | Failure leads to justice  | Failure leads to inquiry |
+| Novelty crushed               | Novelty leads to problems | Novelty implemented      |
 
-### Performance-oriented
 
-Also known as *Generative Culture*, a Performance-oriented Culture values the mission of the organization over all else. It is in this environment where developers adopt a missionary mindset (rather than the more common mercenary mindset). Information flows easily, problems and failures are discussed openly (in fact, those discussions are encouraged).
+### Power-oriented
 
-Software created in a Performance-oriented Culture will tend to have a Loosely Coupled architecture (due to [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law)), with deployments that are fast (minutes) and frequent (on-demand, several times per-day), taking full advantage of a fully automated CI/CD pipeline.
+Also known as *Pathological Culture*, a Power-oriented Culture values individual goals over organizational goals, where the loudest and most powerful voice in the room gets their way. Communication does not flow easily, and problems are typically suppressed.
+
+Software created in a Power-oriented Culture will tend to have a Tightly Coupled architecture (due to [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law)) and will reflect the particular whims of whoever has the most powerful voice (typically whoever is at the top of the hierarchy).
 
 
 ### Rule-oriented
@@ -69,12 +78,12 @@ Also known as *Bureaucratic Culture*, a Rule-oriented Culture values departmenta
 
 Software created in a Rule-oriented Culture will tend to have a Tightly Coupled architecture (due to [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law)) and will reflect the particular bureaucratic communication channels between teams. There is likely a Change Approval Board, with deployments that are slower (measured in hours) and less-frequent (weekly or more) than what a fully automated CI/CD pipeline could otherwise provide.
 
+### Performance-oriented
 
-### Power-oriented
+Also known as *Generative Culture*, a Performance-oriented Culture values the mission of the organization over all else. It is in this environment where developers adopt a missionary mindset (rather than the more common mercenary mindset). Information flows easily, problems and failures are discussed openly (in fact, those discussions are encouraged).
 
-Also known as *Pathological Culture*, a Power-oriented Culture values individual goals over organizational goals, where the loudest and most powerful voice in the room gets their way. Communication does not flow easily, and problems are typically suppressed.
+Software created in a Performance-oriented Culture will tend to have a Loosely Coupled architecture (due to [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law)), with deployments that are fast (minutes) and frequent (on-demand, several times per-day), taking full advantage of a fully automated CI/CD pipeline.
 
-Software created in a Power-oriented Culture will tend to have a Tightly Coupled architecture (due to [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law)) and will reflect the particular whims of whoever has the most powerful voice (typically whoever is at the top of the hierarchy).
 
 
 ## Changing the Culture

@@ -21,7 +21,7 @@ mkdocs build --clean
 Running a localhost server
 
 ```bash
-mkdocs server
+mkdocs serve
 ```
 
 

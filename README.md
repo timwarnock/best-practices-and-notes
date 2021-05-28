@@ -2,6 +2,7 @@
 
 Playing around with [mkdocs](https://www.mkdocs.org/), and capturing best practices and notes (in a very opinionated way).
 
+
 ## Managing with MkDocs
 
 You'll need `mkdocs` and `mkdocs-material` theme
@@ -30,3 +31,4 @@ Deploying to github pages
 ```
 mkdocs gh-deploy
 ```
+
